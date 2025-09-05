@@ -49,7 +49,7 @@
 }
 
 /* --- OLSOFI logo sizing override --- */
-:root { --logo-size: 56px; }        /* tweak: 48–64px to taste */
+:root { --logo-size: 64px; }        /* tweak: 48–64px to taste */
 @media (max-width: 640px) {
   :root { --logo-size: 44px; }      /* smaller on phones */
 }
