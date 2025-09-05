@@ -36,3 +36,15 @@
   object-fit:cover;background:#fff;box-shadow:0 0 0 1px #e5e7eb;
 }
 .brand .brand-text{font-weight:800;letter-spacing:.3px}
+/* Header logo size */
+.brand img,
+.brand-logo {
+  height: 32px;       /* try 28px if you want smaller */
+  width: 32px;
+  max-height: 32px;   /* guards against overrides */
+  border-radius: 9999px;
+  object-fit: cover;
+  background: #fff;
+  box-shadow: 0 0 0 1px #e5e7eb;
+}
+
