@@ -4,9 +4,9 @@
 .container{max-width:1100px;margin:0 auto;padding:0 1rem}
 .site-header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);z-index:50}
 .header-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
-.brand{display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;color:var(--text);font-weight:700}
-.brand-mark{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--primary-600),#0ea5e9);color:#fff;border-radius:8px;font-size:14px}
-.brand-text{letter-spacing:.5px}
+.brand{display:inline-flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--text)}
+.brand-text{font-weight:800;letter-spacing:.3px}
+.brand-logo{height:32px;width:32px;border-radius:9999px;object-fit:cover;background:#fff;box-shadow:0 0 0 1px var(--border)}
 .nav{display:flex;gap:1rem}.nav a{color:var(--text);text-decoration:none;padding:.5rem .75rem;border-radius:.5rem}.nav a:hover{background:var(--light)}
 .nav-toggle{display:none;border:1px solid var(--border);background:#fff;border-radius:.5rem;padding:.4rem .6rem;font-size:1rem}
 .hero{background:linear-gradient(135deg,#eff6ff,#f8fafc);padding:4rem 0;border-bottom:1px solid var(--border)}
@@ -31,40 +31,11 @@
 @media (max-width:640px){.grid-3,.grid-2{grid-template-columns:1fr}.header-inner{height:auto;gap:.5rem;padding:.5rem 0}
 .nav-toggle{display:inline-block}.nav{display:none;flex-direction:column;padding:.5rem;border:1px solid var(--border);border-radius:.8rem}.nav.open{display:flex}
 .hero{padding:2.5rem 0}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column;align-items:flex-start}}
-.brand-logo{
-  height:40px;width:40px;border-radius:9999px;
-  object-fit:cover;background:#fff;box-shadow:0 0 0 1px #e5e7eb;
-}
-.brand .brand-text{font-weight:800;letter-spacing:.3px}
-/* Header logo size */
-.brand img,
-.brand-logo {
-  height: 40px;       /* try 28px if you want smaller */
-  width: 40px;
-  max-height: 40px;   /* guards against overrides */
-  border-radius: 9999px;
-  object-fit: cover;
-  background: #fff;
-  box-shadow: 0 0 0 1px #e5e7eb;
-}
 
-/* --- OLSOFI logo sizing override --- */
-:root { --logo-size: 64px; }        /* tweak: 48–64px to taste */
+/* --- Logo sizing override --- */
+:root { --logo-size: 56px; }        /* adjust 48–64px as needed */
 @media (max-width: 640px) {
-  :root { --logo-size: 44px; }      /* smaller on phones */
+  :root { --logo-size: 44px; }
 }
-
-.site-header .brand-logo{
-  height: var(--logo-size);
-  width: var(--logo-size);
-  border-radius: 9999px;
-  object-fit: cover;
-  background: #fff;
-  box-shadow: 0 0 0 1px #e5e7eb;
-}
-
-/* keep header tall enough for larger logo */
-.site-header .header-inner{
-  height: calc(var(--logo-size) + 32px);
-  align-items: center;
-}
+.site-header .brand-logo { height: var(--logo-size); width: var(--logo-size); }
+.site-header .header-inner { height: calc(var(--logo-size) + 28px); align-items: center; }
