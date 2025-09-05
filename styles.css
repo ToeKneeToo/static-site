@@ -39,9 +39,9 @@
 /* Header logo size */
 .brand img,
 .brand-logo {
-  height: 32px;       /* try 28px if you want smaller */
-  width: 32px;
-  max-height: 32px;   /* guards against overrides */
+  height: 36px;       /* try 28px if you want smaller */
+  width: 36px;
+  max-height: 36px;   /* guards against overrides */
   border-radius: 9999px;
   object-fit: cover;
   background: #fff;
