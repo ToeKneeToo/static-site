@@ -39,3 +39,8 @@
 }
 .site-header .brand-logo { height: var(--logo-size); width: var(--logo-size); }
 .site-header .header-inner { height: calc(var(--logo-size) + 28px); align-items: center; }
+:root { --logo-size: 56px; }   /* desktop */
+@media (max-width: 640px) {
+  :root { --logo-size: 44px; } /* mobile */
+}
+
