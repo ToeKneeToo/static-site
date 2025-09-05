@@ -65,6 +65,6 @@
 
 /* keep header tall enough for larger logo */
 .site-header .header-inner{
-  height: calc(var(--logo-size) + 28px);
+  height: calc(var(--logo-size) + 32px);
   align-items: center;
 }
