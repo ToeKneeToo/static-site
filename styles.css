@@ -47,3 +47,24 @@
   background: #fff;
   box-shadow: 0 0 0 1px #e5e7eb;
 }
+
+/* --- OLSOFI logo sizing override --- */
+:root { --logo-size: 56px; }        /* tweak: 48–64px to taste */
+@media (max-width: 640px) {
+  :root { --logo-size: 44px; }      /* smaller on phones */
+}
+
+.site-header .brand-logo{
+  height: var(--logo-size);
+  width: var(--logo-size);
+  border-radius: 9999px;
+  object-fit: cover;
+  background: #fff;
+  box-shadow: 0 0 0 1px #e5e7eb;
+}
+
+/* keep header tall enough for larger logo */
+.site-header .header-inner{
+  height: calc(var(--logo-size) + 28px);
+  align-items: center;
+}
